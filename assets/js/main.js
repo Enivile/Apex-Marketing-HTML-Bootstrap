@@ -158,12 +158,14 @@
   /**
    * Preloader
    */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
+    let preloader = select('#preloader');
+    if (preloader) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                preloader.remove();
+            }, 2000);
+        });
+    }
 
   /**
    * Initiate  glightbox 

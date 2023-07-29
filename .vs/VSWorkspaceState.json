@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\img",
+    "\\assets\\img\\clients"
   ],
-  "SelectedNode": "\\sitemap.xml",
+  "SelectedNode": "\\robots.txt",
   "PreviewInSolutionExplorer": false
 }
