@@ -163,7 +163,7 @@
         window.addEventListener('load', () => {
             setTimeout(() => {
                 preloader.remove();
-            }, 2000);
+            }, 100);
         });
     }
 

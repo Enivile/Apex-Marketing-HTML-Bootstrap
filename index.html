@@ -14,6 +14,10 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-54H6RTF');</script>
     <!-- End Google Tag Manager -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -48,6 +52,27 @@
 </head>
 
 <body>
+
+    <!-- Preloader -->
+    <div id="preloader" >
+
+        <div class="container1 video-wrapper">
+            <div class="overlay1"></div>
+            <video playsinline autoplay muted loop poster="cake.jpg">
+                <source src="assets/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="svg-file z-logo">
+                <svg width="133" height="119" viewBox="-1 -5 150 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.322 68.604 13.925 53.37C15.904 50.758 21.413 49.726 24.138 53.599L31.024 67.513C32.028 69.091 34.237 70.296 36.934 69.034L39.401 67.657C39.889 67.456 40.09 67.657 39.975 68.144L32.028 84.01C28.814 88.4 18.257 92.502 11.457 83.781L6.924 74.887C5.978 73.251 5.375 70.813 6.322 68.604M28.03 24.605 35.164 10.069C41.09.834 52.987 3.048 56.811 9.868L84.584 67.146C86.082 69.471 88.408 70.366 93.082 67.817 93.619 67.593 93.82 67.772 93.753 68.42L86.664 82.464C81.006 91.789 69.109 90.626 64.592 82.24L36.684 25.06C35.357 23.247 32.716 22.788 30.765 24.05L28.555 25.342C28.125 25.629 27.752 25.37 28.01 24.653M77.007 24.316 84.291 9.764C88.685 2.146 101.484 2.117 105.645 9.808L133.412 66.998C134.302 69.207 137.172 69.925 140.415 68.691L141.965 67.83C142.654 67.199 142.682 67.572 142.654 68.375L135.334 83.04C128.648 92.223 117.542 89.382 113.811 83.011L86.066 25.86C84.612 23.177 82.018 22.707 79.357 24.139L77.389 25.234C77.143 25.279 76.607 25.972 76.987 24.34"
+                        fill="#47AF9A" />
+                </svg>
+                <span></span>
+            </div>
+        </div>
+
+    </div>
+
 
     <!-- Google Tag Manager (noscript) -->
     <noscript>
@@ -128,15 +153,13 @@
     <main id="main">
 
         <!-- ======= Clients Section ======= -->
-        <section id="clients" class="clients section-bg">
+        
+        <div id="clientSlider">
+            <section id="clients" class="clients section-bg">
             <div class="container">
-
                 <div class="row" data-aos="zoom-in">
 
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/clients/ebuyer.png" class="img-fluid" alt="">
-                    </div>
-
+                    
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
                         <img src="assets/img/clients/Seeds_of_Success.png" class="img-fluid" alt="">
                     </div>
@@ -146,21 +169,82 @@
                     </div>
 
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/clients/flybees1.png" class="img-fluid" alt="">
+                        <img src="assets/img/clients/EduPak.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/Altr-Group.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/Regal.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/ebuyer.png" class="img-fluid" alt="">
                     </div>
 
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
                         <img src="assets/img/clients/edments2.png" class="img-fluid" alt="">
                     </div>
-
+                    
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/clients/EduPak.png" class="img-fluid" alt="">
+                        <img src="assets/img/clients/flybees1.png" class="img-fluid" alt="">
                     </div>
 
                 </div>
-
+                <button class="slick-prev">Previous</button>
+                <button class="slick-next">Next</button>
             </div>
-        </section><!-- End Cliens Section -->
+            </section>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            $('#clientSlider .row').slick({
+                dots: false, // Remove the dots
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                prevArrow: $('.slick-prev'), // Set the previous arrow button
+                nextArrow: $('.slick-next'), // Set the next arrow button
+                responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                    slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                    slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                    slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                    slidesToShow: 1
+                    }
+                }
+                ]
+            });
+            });
+        </script>
+
+        
+
+        <!-- End Cliens Section -->
         <!-- Skills Section -->
         <section id="services" class="services section-bg">
             <div class="container" data-aos="fade-up">
@@ -954,24 +1038,6 @@
         </div>
     </footer><!-- End Footer -->
 
-    <div id="preloader">
-
-        <div class="container1 video-wrapper">
-            <div class="overlay1"></div>
-            <video playsinline autoplay muted loop poster="cake.jpg">
-                <source src="assets/video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="svg-file z-logo">
-                <svg width="133" height="119" viewBox="-1 -5 150 119" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.322 68.604 13.925 53.37C15.904 50.758 21.413 49.726 24.138 53.599L31.024 67.513C32.028 69.091 34.237 70.296 36.934 69.034L39.401 67.657C39.889 67.456 40.09 67.657 39.975 68.144L32.028 84.01C28.814 88.4 18.257 92.502 11.457 83.781L6.924 74.887C5.978 73.251 5.375 70.813 6.322 68.604M28.03 24.605 35.164 10.069C41.09.834 52.987 3.048 56.811 9.868L84.584 67.146C86.082 69.471 88.408 70.366 93.082 67.817 93.619 67.593 93.82 67.772 93.753 68.42L86.664 82.464C81.006 91.789 69.109 90.626 64.592 82.24L36.684 25.06C35.357 23.247 32.716 22.788 30.765 24.05L28.555 25.342C28.125 25.629 27.752 25.37 28.01 24.653M77.007 24.316 84.291 9.764C88.685 2.146 101.484 2.117 105.645 9.808L133.412 66.998C134.302 69.207 137.172 69.925 140.415 68.691L141.965 67.83C142.654 67.199 142.682 67.572 142.654 68.375L135.334 83.04C128.648 92.223 117.542 89.382 113.811 83.011L86.066 25.86C84.612 23.177 82.018 22.707 79.357 24.139L77.389 25.234C77.143 25.279 76.607 25.972 76.987 24.34"
-                          fill="#47AF9A" />
-                </svg>
-                <span></span>
-            </div>
-        </div>
-
-    </div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
